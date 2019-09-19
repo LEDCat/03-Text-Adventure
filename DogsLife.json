@@ -14,36 +14,149 @@
 
     "rooms": {
       "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+        "name": "Pound",
+        "desc": "You are stuck in a cage. You need to escape!",
         "exits": [
           {
             "verb": "NORTH",
-            "target": "LOC2",
+            "target": "NoExit",
             "condition": ""
           },
           {
             "verb": "SOUTH",
-            "target": "LOC2",
+            "target": "BARS",
             "condition": ""
           },
           {
             "verb": "WEST",
-            "target": "LOC2",
+            "target": "NoExit",
             "condition": ""
           },
           {
             "verb": "EAST",
-            "target": "LOC2",
+            "target": "TUNNEL",
             "condition": ""
           }
         ],
         "inventory": []
       },
-      "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
+      "TUNNEL": {
+        "name": "Tunnel",
+        "desc": "You were able to find a worn down hole in the wall. Keep digging to get out.",
         "exits": [
+            {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "WEST",
+            "target": "START",
+            "condition": ""
+            },
+            {
+            "verb": "EAST",
+            "target": "YARD",
+            "condition": "" 
+            }
+        ],
+        "inventory": []
+      },
+      "YARD": {
+        "name": "Courtyard",
+        "desc": "You erupt from the ground into the courtyard. Dodge the dogcatchers keeping watch.",
+        "exits": [
+            {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "SOUTH",
+            "target": "FENCE",
+            "condition": ""
+            },
+            {
+            "verb": "WEST",
+            "target": "TUNNEL",
+            "condition": ""
+            },
+            {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": "" 
+            }
+        ],
+        "inventory": []
+      },
+      "FENCE": {
+        "name": "Fence",
+        "desc": "You're at the fence, almost there! Find a way past it.",
+        "exits": [
+            {
+            "verb": "NORTH",
+            "target": "YARD",
+            "condition": ""
+            },
+            {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "WEST",
+            "target": "FREEDOM!",
+            "condition": ""
+            },
+            {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": "" 
+            }
+        ],
+        "inventory": []
+      },
+      "FREEDOM!": {
+        "name": "Outside",
+        "desc": "You sprint out of the concrete lots into green, grassy land. You're free!",
+        "exits": [
+            {
+            "verb": "",
+            "target": "QUIT",
+            "condition": ""            
+            }            
+        ],
+        "inventory": []
+      },
+      "BARS": {
+        "name": "Cage Bars",
+        "desc": "You can see a looming hallway ahead of you, but you're far to big to squeeze through the cage bars.",
+        "exits": [
+            {
+            "verb": "NORTH",
+            "target": "START",
+            "condition": ""
+            },
+            {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+            },
+            {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": "" 
+            }
         ],
         "inventory": []
       }
