@@ -66,7 +66,7 @@ def end_game(winning,points,moves):
         print('\nYou scored {points} points in {moves} moves! Nicely done!'.format(moves=moves, points=points))
     else:
         print('\n\nThanks for playing!')
-        print('\nYou scored {points} points in {moves} moves. See you next time!'.format(moves=moves, points=points))
+        print('\nYou scored completed the game in {moves} moves. See you next time!'.format(moves=moves))
 
 
 
