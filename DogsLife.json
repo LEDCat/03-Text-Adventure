@@ -123,14 +123,8 @@
       },
       "FREEDOM!": {
         "name": "Outside",
-        "desc": "You sprint out of the concrete lots into green, grassy land. You're free!",
-        "exits": [
-            {
-            "verb": "",
-            "target": "QUIT",
-            "condition": ""            
-            }            
-        ],
+        "desc": "You sprint out of the concrete lots into green, grassy land. You're free! Enter 'quit' to end.",
+        "exits": [],
         "inventory": []
       },
       "BARS": {
